@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     marginVertical: 10,
   },
   heroContainer: {
-    paddingVertical: 20,
+    paddingVertical: 10,
     gap: 15,
     width: "100%",
     justifyContent: "center",
@@ -30,6 +30,25 @@ const styles = StyleSheet.create({
   h1: {
     fontSize: 21,
     fontWeight: "700",
+    textAlign: "center",
+  },
+  SafeAreaView: {
+    height: 250,
+    width: "100%",
+  },
+  premiumSection: {
+    flex: 1,
+    width: "85%",
+    gap: 20,
+    borderRadius: 10,
+    backgroundColor: "#fff",
+    padding: 40,
+    marginVertical: 40,
+    marginHorizontal: 28,
+  },
+  premiumheader: {
+    fontSize: 24,
+    fontWeight: "semibold",
     textAlign: "center",
   },
 });

@@ -37,7 +37,7 @@ export default function HomeScreen(props) {
   }, []);
 
   const onPressRecipe = (item) => {
-    navigation.navigate("Recipe", { item });
+    navigation.navigate("Book", { item });
   };
 
   const renderRecipes = ({ item }) => (
@@ -55,28 +55,32 @@ export default function HomeScreen(props) {
 
   return (
     <View>
-      <SafeAreaView>
-        <ScrollView style={styles.ScrollView}>
-          <View style={styles.heroContainer}>
-            <Image
-              style={styles.heroImg}
-              source={require("../../../assets/icons/hero.png")}
-            />
-            <Text style={styles.h1}>
-              Jelajah Tanpa Batas : {"\n"} Temukan Ratusan Buku {"\n"} Dengan
-              Cepat
-            </Text>
-          </View>
-        </ScrollView>
-      </SafeAreaView>
-      <FlatList
-        vertical
-        showsVerticalScrollIndicator={false}
-        numColumns={2}
-        data={recipes}
-        renderItem={renderRecipes}
-        keyExtractor={(item) => `${item.recipeId}`}
-      />
+      <ScrollView style={styles.ScrollView}>
+        <View style={styles.heroContainer}>
+          <Image
+            style={styles.heroImg}
+            source={require("../../../assets/icons/hero.png")}
+          />
+          <Text style={styles.h1}>
+            Jelajah Tanpa Batas : {"\n"} Temukan Ratusan Buku {"\n"} Dengan
+            Cepat
+          </Text>
+        </View>
+        <SafeAreaView style={styles.SafeAreaView}>
+          <FlatList
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            data={recipes}
+            renderItem={renderRecipes}
+            keyExtractor={(item) => `${item.recipeId}`}
+          />
+        </SafeAreaView>
+        <View style={styles.premiumSection}>
+          <Text style={styles.premiumheader}>
+            Upgrade ke Premium untuk Pengalaman Peminjaman yang Lebih Baik!
+          </Text>
+        </View>
+      </ScrollView>
     </View>
   );
 }

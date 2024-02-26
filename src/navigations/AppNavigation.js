@@ -4,7 +4,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import HomeScreen from "../screens/Home/HomeScreen";
 import CategoriesScreen from "../screens/Categories/CategoriesScreen";
-import RecipeScreen from "../screens/Recipe/RecipeScreen";
+import RecipeScreen from "../screens/Book/RecipeScreen";
 import RecipesListScreen from "../screens/RecipesList/RecipesListScreen";
 import DrawerContainer from "../screens/DrawerContainer/DrawerContainer";
 import IngredientScreen from "../screens/Ingredient/IngredientScreen";
@@ -34,7 +34,7 @@ function MainNavigator() {
       <Stack.Screen name="Profile" component={ProfileScreen} />
       <Stack.Screen name="Request" component={RequestScreen} />
       <Stack.Screen name="Categories" component={CategoriesScreen} />
-      <Stack.Screen name="Recipe" component={RecipeScreen} />
+      <Stack.Screen name="Book" component={RecipeScreen} />
       <Stack.Screen name="Membership" component={MembershipScreen} />
       <Stack.Screen name="RecipesList" component={RecipesListScreen} />
       <Stack.Screen name="Ingredient" component={IngredientScreen} />

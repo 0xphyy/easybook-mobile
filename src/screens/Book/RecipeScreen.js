@@ -81,7 +81,7 @@ export default function RecipeScreen(props) {
             dotsLength={item.photosArray.length}
             activeDotIndex={activeSlide}
             containerStyle={styles.paginationContainer}
-            dotColor="rgba(255, 255, 255, 0.92)"
+            dotColor="#eee"
             dotStyle={styles.paginationDot}
             inactiveDotColor="white"
             inactiveDotOpacity={0.4}
@@ -117,7 +117,7 @@ export default function RecipeScreen(props) {
           <ViewIngredientsButton
             onPress={() => {
               let ingredients = item.ingredients;
-              let title = "Ingredients for " + item.title;
+              let title = "Similiar with " + item.title;
               navigation.navigate("IngredientsDetails", { ingredients, title });
             }}
           />

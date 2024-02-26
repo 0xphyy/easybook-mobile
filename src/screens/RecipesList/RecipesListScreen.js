@@ -17,7 +17,7 @@ export default function RecipesListScreen(props) {
   }, []);
 
   const onPressRecipe = (item) => {
-    navigation.navigate("Recipe", { item });
+    navigation.navigate("Book", { item });
   };
 
   const renderRecipes = ({ item }) => (
