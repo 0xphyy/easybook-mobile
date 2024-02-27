@@ -7,14 +7,12 @@ const styles = StyleSheet.create({
   title: RecipeCard.title,
   category: RecipeCard.category,
   Imgcontainer: {
-    paddingVertical: 10,
-    width: "50%",
-    marginHorizontal: 40,
+    width: "100%",
   },
   tinyLogo: {
-    margin: 5,
-    width: 120,
-    marginVertical: 10,
+    width: 130,
+    resizeMode: "contain",
+    marginLeft: 70,
   },
   heroContainer: {
     paddingVertical: 10,

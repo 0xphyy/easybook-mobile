@@ -1,7 +1,7 @@
 import React, { useLayoutEffect } from "react";
 import MenuImage from "../../components/MenuImage/MenuImage";
 import {
-    StyleSheet,
+  StyleSheet,
   View,
   TextInput,
   Text,
@@ -10,13 +10,8 @@ import {
   SafeAreaView,
   Image,
   FlatList,
-  TouchableHighlight 
+  TouchableHighlight,
 } from "react-native";
-// import FormButton from './components/Button/FormButton';
-// import { Link } from 'expo-router';
-// import 'nativewind/tailwind.css';
-
-
 
 const App = () => {
   return (
@@ -92,60 +87,59 @@ const App = () => {
 };
 
 const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: "#eee",
-      alignItems: "center",
-      justifyContent: "center",
-    },
-    scrollView: {
-      width: "100%",
-      flex: 1,
-      paddingTop: 30,
-      marginHorizontal: 20,
-    },
-    profile: {
-      width: 50,
-      marginVertical: 20,
-    },
-    formContainer: {
-      borderRadius: 10,
-      width: "85%",
-      backgroundColor: "#fff",
-      paddingHorizontal: 30,
-      paddingVertical: 40,
-      marginVertical: 40,
-    },
-    h2: {
-      fontSize: 18,
-      color: "#6E757C",
-      textAlign: "center",
-    },
-    title: {
-      fontSize: 21,
-      fontWeight: "bold",
-      color: "#122235",
-    },
-    inputContainer: {
-      gap: 10,
-    },
-    label: {
-      fontSize: 16,
-      fontWeight: "bold",
-      color: "#122235",
-    },
-    input: {
-      height: 40,
-      borderColor: "#BDBDBD",
-      borderWidth: 1,
-      borderRadius: 10,
-      paddingHorizontal: 20,
-      marginBottom: 10,
-    },
-    text: {
-      color: "#fff",
-      fontSize: 16,
-    },
-  });
+  container: {
+    flex: 1,
+    backgroundColor: "#eee",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  scrollView: {
+    width: "100%",
+    flex: 1,
+    paddingTop: 30,
+    marginHorizontal: 20,
+  },
+  profile: {
+    width: 50,
+    marginVertical: 20,
+  },
+  formContainer: {
+    borderRadius: 10,
+    width: "85%",
+    backgroundColor: "#fff",
+    paddingHorizontal: 30,
+    paddingVertical: 40,
+    marginVertical: 40,
+  },
+  h2: {
+    fontSize: 18,
+    color: "#6E757C",
+    textAlign: "center",
+  },
+  title: {
+    fontSize: 21,
+    fontWeight: "bold",
+    color: "#122235",
+  },
+  inputContainer: {
+    gap: 10,
+  },
+  label: {
+    fontSize: 16,
+    fontWeight: "bold",
+    color: "#122235",
+  },
+  input: {
+    height: 40,
+    borderColor: "#BDBDBD",
+    borderWidth: 1,
+    borderRadius: 10,
+    paddingHorizontal: 20,
+    marginBottom: 10,
+  },
+  text: {
+    color: "#fff",
+    fontSize: 16,
+  },
+});
 export default App;
-

@@ -14,6 +14,7 @@ import {
   getCategoryName,
   getCategoryById,
 } from "../../data/MockDataAPI";
+import MenuImage from "../../components/MenuImage/MenuImage";
 import BackButton from "../../components/BackButton/BackButton";
 import ViewIngredientsButton from "../../components/ViewIngredientsButton/ViewIngredientsButton";
 
@@ -104,7 +105,6 @@ export default function RecipeScreen(props) {
             </Text>
           </TouchableHighlight>
         </View>
-
         <View style={styles.infoContainer}>
           <Image
             style={styles.infoPhoto}
@@ -112,7 +112,6 @@ export default function RecipeScreen(props) {
           />
           <Text style={styles.infoRecipe}>{item.time} Star </Text>
         </View>
-
         <View style={styles.infoContainer}>
           <ViewIngredientsButton
             onPress={() => {

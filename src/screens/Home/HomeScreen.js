@@ -52,7 +52,6 @@ export default function HomeScreen(props) {
       </View>
     </TouchableHighlight>
   );
-
   return (
     <View>
       <ScrollView style={styles.ScrollView}>

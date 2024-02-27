@@ -27,6 +27,7 @@ function MainNavigator() {
           alignSelf: "center",
           flex: 1,
           marginVertical: 15,
+          color: "#122235",
         },
       }}
     >
